@@ -1,0 +1,25 @@
+---
+layout: default
+body_class: web
+title: 追梦天使的蓝色天空
+html_title: 追梦天使
+byline: 梦想因你们而美丽，在这里我们为你插上飞翔的翅膀！
+---
+
+<div class="subpage-list">
+  <ul>
+    <li{% if page.subpage == 'classes' %} class="current"{% endif %}>
+      <a href="{{ site.url }}/web/free-classes/">Free GitHub &amp; Git Classes</a>
+    </li>
+    <li{% if page.subpage == 'foundations' %} class="current"{% endif %}>
+      <a href="{{ site.url }}/web/git-foundations/">GitHub &amp; Git Foundations Course</a>
+    </li>
+    <li{% if page.subpage == 'advanced' %} class="current"{% endif %}>
+      <a href="{{ site.url }}/web/advanced-git/">Advanced GitHub &amp; Git Course</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  {{ content }}
+</div>
