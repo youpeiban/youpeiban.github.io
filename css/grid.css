@@ -38,8 +38,8 @@
 .container .two-thirds      { width: 66.6666%; }
 .container .golden-small    { width: 38.2716%; }
 .container .golden-large    { width: 61.7283% }
-.container .quarter         { width: 25%; }
-.container .three-quarters  { width: 75%; }
+.container .quarter         { width: 35%; }
+.container .three-quarters  { width: 65%; }
 .container .fifth           { width: 20%; }
 .container .two-fifths      { width: 40%; }
 .container .three-fifths    { width: 60%; }
