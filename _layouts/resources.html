@@ -1,41 +1,22 @@
 ---
 layout: default
 body_class: resources
-title: Git Resources
-html_title: Git Resources
-byline: A collection of the highest quality Git resources.
+title: YOU陪伴的合作伙伴们
+html_title: 合作伙伴
+byline: 与我们合作，贡献您的力量，成就未来的梦想！
 ---
 
 <div class="subpage-list">
   <ul>
-    <li{% if page.subpage == 'videos' %} class="current"{% endif %}>
-      <a href="{{ site.url }}/resources/videos/">Videos</a>
+    <li{% if page.subpage == 'classes' %} class="current"{% endif %}>
+      <a href="{{ site.url }}/partners/intro-partners/">合作伙伴介绍</a>
     </li>
-    <li{% if page.subpage == 'presentations' %} class="current"{% endif %}>
-      <a href="{{ site.url }}/resources/presentations/">Presentations</a>
+    <li{% if page.subpage == 'foundations' %} class="current"{% endif %}>
+      <a href="{{ site.url }}/partners/tobe-partners/">成为我们的合作伙伴</a>
     </li>
-    <li{% if page.subpage == 'books' %} class="current"{% endif %}>
-      <a href="{{ site.url }}/resources/books/">Books</a>
-    </li>
-    <li{% if page.subpage == 'repos' %} class="current"{% endif %}>
-      <a href="{{ site.url }}/resources/repositories/">GitHub Repositories</a>
-    </li>
-    <li{% if page.subpage == 'other' %} class="current"{% endif %}>
-      <a href="{{ site.url }}/resources/other/">More Resources</a>
+    <li{% if page.subpage == 'advanced' %} class="current"{% endif %}>
+      <a href="{{ site.url }}/partners/our-story/">合作伙伴的故事</a>
     </li>
   </ul>
 </div>
 
-<div class="container">
-  <div class="three-quarters">
-    {{ content }}
-  </div>
-  <div class="quarter">
-    <div class="content">
-      <div class="help-box">
-        <h4>GitHub Help</h4>
-        <p>GitHub’s <a href="http://help.github.com" target=_blank>help website</a> is an excellent resource to keep bookmarked. It covers a range of Git topics from basic setup, all the way through to advanced topics.</p>
-      </div>
-    </div>
-  </div>
-</div>
