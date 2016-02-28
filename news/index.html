@@ -11,9 +11,13 @@ byline: YOU陪伴的精彩，由你我共同创造！
       <div class="content">
         <div class="container">
             <h3>
-              {{ post.title }}
+              <a href="{{ post.url }}">{{ post.title }}</a>
             </h3>
-            <p class="bio">{{ post.content }}</p>
+           	{% if post.content contains "&nbsp;" %}
+				{{ post.content | split:"&nbsp;" | first }}
+			{% else %}
+				{{ post.content | strip_html | truncate:250 }}
+			{% endif %}
         </div>
       </div>
     </div>
