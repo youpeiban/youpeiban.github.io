@@ -6,7 +6,36 @@ html_title: 新闻动态
 byline: YOU陪伴的精彩，由你我共同创造！
 ---
 
-<div class="container">
+{% for post in site.categories.news %}
+  <div class="new section center-on-mobiles">
+    <div class="four-fifths">
+      <div class="content">
+        <div class="container">
+          <div class="half">
+            <h3>
+              {{ post.name }}
+              <!--
+              <span class="social">
+                <a href="https://github.com/{{ trainer.github }}">
+                  <img src="{{ site.url }}/img/octocat-icon.png" width="16px" height="16px" alt="View {{ trainer.github }}’s code on GitHub">
+                </a>
+                <a href="http://twitter.com/{{ trainer.twitter }}">
+                  <img src="{{ site.url }}/img/twitter-icon.png" width="16px" height="16px" alt="Follow {{ trainer.github }} on Twitter">
+                </a>
+              </span>
+              -->
+            </h3>
+            <p class="bio">{{ post.content }}</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endfor %}
+
+
+<!--<div class="container">
   {% for post in paginator.posts %}
 	<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 	{% if post.content contains "&nbsp;" %}
@@ -17,6 +46,7 @@ byline: YOU陪伴的精彩，由你我共同创造！
   {% endfor %}
 
   <!-- Pagination links -->
+ <!-- 
   <div class="pull-right">
     {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
@@ -41,3 +71,4 @@ byline: YOU陪伴的精彩，由你我共同创造！
   </div>
 
 </div>
+--!>
