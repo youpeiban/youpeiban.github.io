@@ -29,3 +29,6 @@ github:
 
 disqus:
   id: githubteachingmaterials
+
+paginate: 10
+paginate_path: "page:num"
