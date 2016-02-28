@@ -1,10 +1,5 @@
 ---
 name: 刘贤沽
-avatar_url: /images/founder/liuxiangu.jpg
-weibo:
-email:
-testimonial: 我相信每个人都有追求梦想的权利，而YOU陪伴计划的目标就是点燃天使们的梦想之火，让他们能够更好的成长。
-
 ---
  
   <font color=#0099ff>【毕业院校】</font>浙江大学    

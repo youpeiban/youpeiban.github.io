@@ -1,10 +1,5 @@
 ---
-name: 吕海娇
-avatar_url: /images/founder/lvhaijiao.jpg
-weibo:
-email:
-testimonial: YOU陪伴，为您搭建梦想的舞台，也是我们梦想的实践，伸出你的手，你便拉近了世界的距离，踏出第一步，你便走出海阔天空，YOU陪伴，助成长，期待你的加入，因为错过的都不会再有。
-
+title: 吕海娇
 ---
 
   <font color=#0099ff>【毕业院校】</font>沈阳药科大学(硕士)  
