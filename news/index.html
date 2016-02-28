@@ -1,4 +1,43 @@
 ---
-layout: redirect
-redirecturl: youpeiban-news
+layout: default
+body_class: news
+title: YOU陪伴组织新闻动态
+html_title: 新闻动态
+byline: YOU陪伴的精彩，由你我共同创造！
 ---
+
+<div class="container">
+  {% for post in paginator.posts %}
+	<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	{% if post.content contains "&nbsp;" %}
+		{{ post.content | split:"&nbsp;" | first }}
+	{% else %}
+		{{ post.content | strip_html | truncate:250 }}
+	{% endif %}
+  {% endfor %}
+
+  <!-- Pagination links -->
+  <div class="pull-right">
+    {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a class="btn btn-primary btn-sm" href="/news">首页</a>
+    <a class="btn btn-primary btn-sm" href="/news">&laquo; 上一页</a>
+    {% else %}
+    <a class="btn btn-primary btn-sm" href="/news">首页</a>
+    <a class="btn btn-primary btn-sm" href="/page{{paginator.previous_page}}/">&laquo; 上一页</a>
+    {% endif %}
+    {% else %}
+    <span><a class="btn btn-primary btn-sm disabled" href="/">首页</a></span>
+    <span><a class="btn btn-primary btn-sm disabled">&laquo; 上一页</a></span>
+    {% endif %}
+    <span><a class="btn btn-primary btn-sm disabled">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span>
+    {% if paginator.next_page %}
+    <a class="btn btn-primary btn-sm" href="/page{{paginator.next_page}}/">下一页 &raquo;</a>
+    <a class="btn btn-primary btn-sm" href="/page{{paginator.total_pages}}/">末页</a>
+    {% else if paginator.page == paginator.total_pages %}
+    <span><a class="btn btn-primary btn-sm disabled">下一页 &raquo;</a></span>
+    <span><a class="btn btn-primary btn-sm disabled">末页</a></span>
+    {% endif %}
+  </div>
+
+</div>
