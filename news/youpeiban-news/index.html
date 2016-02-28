@@ -6,12 +6,12 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
 
 <div class="container">
   {% for post in paginator.posts %}
-  <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  {% if post.content contains "&nbsp;" %}
-  {{ post.content | split:"&nbsp;" | first }}
-  {% else %}
-  {{ post.content | strip_html | truncate:250 }}
-  {% endif %}
+	<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	{% if post.content contains "&nbsp;" %}
+		{{ post.content | split:"&nbsp;" | first }}
+	{% else %}
+		{{ post.content | strip_html | truncate:250 }}
+	{% endif %}
   {% endfor %}
 
   <!-- Pagination links -->
